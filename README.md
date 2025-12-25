@@ -295,10 +295,10 @@ This project was built with AI assistance:
 - **Code Generation**: ~40% generated via AI
 - **Time Spent**: ~6 hours fine-tuning and debugging
 - **AI-Assisted Parts**:
- - Architecture Design
- - Docker configuration
-  - Deployment configuration adjustments
-  - README documentation
+    - Architecture Design
+    - Docker configuration
+     - Deployment configuration adjustments
+     - README documentation
 - **Manual Work**:
     - Initial project structure and boilerplate
   - Testing and debugging lockout logic
@@ -307,6 +307,7 @@ This project was built with AI assistance:
   - Database schema design
   - Authentication service logic
   - React component structure
+
 
 
 
