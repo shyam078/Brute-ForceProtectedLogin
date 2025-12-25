@@ -11,8 +11,6 @@ A full-stack login application with advanced brute-force protection mechanisms, 
 - **Modern UI**: Beautiful, responsive React frontend
 - **RESTful API**: Clean Golang backend with Gin framework
 
-## 🏗️ Architecture
-
 ### Tech Stack
 
 - **Frontend**: React 18 with Vite
@@ -294,27 +292,22 @@ For testing purposes, the following users are pre-configured:
 
 This project was built with AI assistance:
 
-- **Code Generation**: ~80% of initial code structure generated via AI
-- **Time Spent**: ~2 hours fine-tuning and debugging
+- **Code Generation**: ~40% generated via AI
+- **Time Spent**: ~6 hours fine-tuning and debugging
 - **AI-Assisted Parts**:
-  - Initial project structure and boilerplate
-  - Database schema design
-  - Authentication service logic
-  - React component structure
-  - Docker configuration
+ - Architecture Design
+ - Docker configuration
+  - Deployment configuration adjustments
   - README documentation
-
 - **Manual Work**:
+    - Initial project structure and boilerplate
   - Testing and debugging lockout logic
   - UI/UX refinements
   - Error handling improvements
-  - Deployment configuration adjustments
+  - Database schema design
+  - Authentication service logic
+  - React component structure
 
-## 📄 License
 
-This project is created for educational/demonstration purposes.
 
-## 🙏 Acknowledgments
-
-Built as a take-home assignment demonstrating full-stack development skills with security best practices.
 
