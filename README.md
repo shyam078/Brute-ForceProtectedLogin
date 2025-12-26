@@ -61,9 +61,9 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    ```
 
 3. **Access the application**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8080
-   - Database: localhost:5432
+   - Frontend: http://<IP>:3000
+   - Backend API: http://<IP>:8080
+   - Database: <IP>:5432
 
 4. **Stop services**
    ```bash
@@ -88,7 +88,7 @@ A full-stack login application with advanced brute-force protection mechanisms, 
 
 3. **Set environment variables** (optional, defaults provided):
    ```bash
-   export DB_HOST=localhost
+   export DB_HOST=<IP>
    export DB_PORT=5432
    export DB_USER=postgres
    export DB_PASSWORD=postgres
@@ -112,9 +112,9 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    npm install
    ```
 
-2. **Set API URL** (optional, defaults to localhost:8080):
+2. **Set API URL** (optional, defaults to <IP>:8080):
    ```bash
-   export VITE_API_URL=http://localhost:8080/api
+   export VITE_API_URL=http://<IP>:8080/api
    ```
 
 3. **Run the frontend**:
@@ -122,7 +122,7 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    npm run dev
    ```
 
-4. **Access the application**: http://localhost:3000
+4. **Access the application**: http://<IP>:3000
 
 ## 🧪 Testing
 
@@ -166,7 +166,7 @@ Optimized indexes on email, IP address, and timestamps for fast lookups.
 ### Environment Variables
 
 **Backend:**
-- `DB_HOST`: PostgreSQL host (default: localhost)
+- `DB_HOST`: PostgreSQL host (default: <IP>)
 - `DB_PORT`: PostgreSQL port (default: 5432)
 - `DB_USER`: Database user (default: postgres)
 - `DB_PASSWORD`: Database password (default: postgres)
@@ -176,7 +176,7 @@ Optimized indexes on email, IP address, and timestamps for fast lookups.
 - `PORT`: Server port (default: 8080)
 
 **Frontend:**
-- `VITE_API_URL`: Backend API URL (default: http://localhost:8080/api)
+- `VITE_API_URL`: Backend API URL (default: http://<IP>:8080/api)
 
 ### Lockout Parameters
 
@@ -188,6 +188,7 @@ Currently hardcoded in `backend/config/config.go`:
 - IP window: 5 minutes
 
 ## 🌐 Deployment
+   Deployed In AWS EC2 Instance.
 
 ### Deploy to Production
 
@@ -307,6 +308,7 @@ This project was built with AI assistance:
   - Database schema design
   - Authentication service logic
   - React component structure
+
 
 
 
