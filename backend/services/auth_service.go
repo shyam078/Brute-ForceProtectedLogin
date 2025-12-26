@@ -68,7 +68,6 @@ func (s *AuthService) Login(email, password, ipAddress string) (*models.LoginRes
 	err = bcrypt.CompareHashAndPassword([]byte(user.PasswordHash), []byte(password))
 	fmt.Println("err:", err)
 	if err != nil {
-		fmt.Println("er111111111111111111r:", err)
 		// Wrong password - record failed attempt
 		s.recordFailedAttempt(&user.ID, email, ipAddress)
 		return &models.LoginResponse{

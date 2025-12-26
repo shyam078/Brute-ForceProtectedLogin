@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import './LoginForm.css'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
+const API_URL = import.meta.env.VITE_API_URL || 'http://${process.env.HOST}:8080/api'
 
 function LoginForm() {
   const [email, setEmail] = useState('')

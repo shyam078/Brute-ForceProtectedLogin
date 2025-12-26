@@ -61,8 +61,8 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    ```
 
 3. **Access the application**
-   - Frontend: http://<IP>:3000
-   - Backend API: http://<IP>:8080
+   - Frontend: http://<Server IP>:3000
+   - Backend API: http://<Server IP>:8080
    - Database: <IP>:5432
 
 4. **Stop services**
@@ -89,6 +89,7 @@ A full-stack login application with advanced brute-force protection mechanisms, 
 3. **Set environment variables** (optional, defaults provided):
    ```bash
    export DB_HOST=<IP>
+   export HOST=<Server IP>
    export DB_PORT=5432
    export DB_USER=postgres
    export DB_PASSWORD=postgres
@@ -112,9 +113,9 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    npm install
    ```
 
-2. **Set API URL** (optional, defaults to <IP>:8080):
+2. **Set API URL** (optional, defaults to <Server IP>:8080):
    ```bash
-   export VITE_API_URL=http://<IP>:8080/api
+   export VITE_API_URL=http://<Server IP>:8080/api
    ```
 
 3. **Run the frontend**:
@@ -122,7 +123,7 @@ A full-stack login application with advanced brute-force protection mechanisms, 
    npm run dev
    ```
 
-4. **Access the application**: http://<IP>:3000
+4. **Access the application**: http://<Server IP>:3000
 
 ## 🧪 Testing
 
@@ -167,6 +168,7 @@ Optimized indexes on email, IP address, and timestamps for fast lookups.
 
 **Backend:**
 - `DB_HOST`: PostgreSQL host (default: <IP>)
+- `HOST`: Server host (default: <Server IP>)
 - `DB_PORT`: PostgreSQL port (default: 5432)
 - `DB_USER`: Database user (default: postgres)
 - `DB_PASSWORD`: Database password (default: postgres)
@@ -176,7 +178,7 @@ Optimized indexes on email, IP address, and timestamps for fast lookups.
 - `PORT`: Server port (default: 8080)
 
 **Frontend:**
-- `VITE_API_URL`: Backend API URL (default: http://<IP>:8080/api)
+- `VITE_API_URL`: Backend API URL (default: http://<Server IP>:8080/api)
 
 ### Lockout Parameters
 
