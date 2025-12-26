@@ -6,6 +6,7 @@ import (
 
 type Config struct {
 	DBHost                string
+	Host				  string
 	DBPort                string
 	DBUser                string
 	DBPassword            string
@@ -23,6 +24,7 @@ type Config struct {
 func LoadConfig() *Config {
 	return &Config{
 		DBHost:                getEnv("DB_HOST", "localhost"),
+		Host:				   getEnv("HOST", "localhost"),
 		DBPort:                getEnv("DB_PORT", "5432"),
 		DBUser:                getEnv("DB_USER", "postgres"),
 		DBPassword:            getEnv("DB_PASSWORD", "postgres"),
@@ -44,3 +46,4 @@ func getEnv(key, defaultValue string) string {
 	}
 	return defaultValue
 }
+
